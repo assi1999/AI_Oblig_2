@@ -68,3 +68,15 @@ try:
     print(f"Predicted Price for {specific_date.strftime('%Y-%m-%d')}: {specific_prediction:.2f}")
 except:
     print("Invalid date format. Please enter the date in the format YYYY-MM-DD.")
+
+
+"""
+Why did we use Linear Regression?
+Well in this code we used linear reggresion on the tranning data using features ['Open', 'Low', 'High', 'Volume'] to predict the 'Close' price of the Tesla Inc stock.
+Then it stores the predictions on the data set in the variable 'predictions'.
+We chose linear reggresion, becuase of simplicity and the possible linear connection between the variables. 
+This might be to simple for some datasets, but worked in this instance.
+There are other factor that also play a major role in determining the outcome of the stock price, but in this simple methode, we didin't regard those other factors.
+This methode of machine learning is also applicable for continues price predictions.
+In addition, it makes the feature variable consisting of ['Open', 'Low', 'High', 'Volume'] more easily accessable for the traning set, to further predict a algorithm for price determning.  
+"""
